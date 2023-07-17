@@ -1,0 +1,40 @@
+@import '../../variables.module';
+
+.SearchBar {
+  position: relative;
+
+  &__input {
+    padding: 0 2vw;
+    .adm-search-bar-input-box {
+      background-color: $hard-gray;
+      border-radius: 14px;
+      padding: 5px 10px;
+    }
+
+    &.adm-search-bar-active .adm-search-bar-input-box {
+      border-color: $gray;
+    }
+
+    .adm-input-element {
+      font-size: 20px;
+      color: $easy-gray;
+      padding-top: 5px;
+    }
+
+    .adm-input-clear {
+      color: $easy-gray;
+    }
+
+    .adm-input-element::placeholder {
+      color: $easy-gray;
+    }
+  }
+
+  &__icon {
+    z-index: 1;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 30px;
+  }
+}

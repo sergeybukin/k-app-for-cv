@@ -1,0 +1,73 @@
+@import '../../../../variables.module';
+
+.CustomSelect {
+  &__select {
+    min-width: 40%;
+    width: 40%;
+
+    .ant-select-selection-placeholder {
+      font-size: 18px;
+      color: $easy-gray;
+    }
+
+    .ant-select-selection-item {
+      font-size: 18px;
+      color: $easy-gray;
+    }
+
+    &.ant-select-multiple {
+      .ant-select-selection-item {
+        font-size: 18px;
+        color: $easy-gray;
+        background-color: $x-gray;
+      }
+    }
+
+    .ant-select-selector {
+      padding: 0 !important;
+      height: 50px;
+      margin: auto;
+    }
+
+    .ant-select-arrow,
+    .ant-select-search {
+      font-size: 15px;
+      color: $easy-gray;
+    }
+
+    .ant-select-clear {
+      font-size: 20px;
+      color: $easy-gray;
+      background-color: $s-dark;
+      z-index: 1;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+    }
+  }
+
+  &__dropdown {
+    background-color: $x-gray;
+    width: 100px !important;
+
+    .ant-select-item-option {
+      font-size: 18px;
+      color: $easy-gray !important;
+      font-weight: 600;
+      margin: 1px 0;
+
+      &.ant-select-item-option-active {
+        background-color: $s-dark;
+      }
+
+      &.ant-select-item-option-selected {
+        background-color: $s-dark;
+      }
+
+      .ant-select-item-option-state {
+        color: $primary !important;
+      }
+    }
+  }
+}

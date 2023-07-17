@@ -1,0 +1,11 @@
+@import '../../variables.module';
+
+.IonLoader {
+  color: $dark !important;
+  font: $main-font;
+  --spinner-color: #292929ff;
+
+  .loading-wrapper {
+    background: $primary;
+  }
+}

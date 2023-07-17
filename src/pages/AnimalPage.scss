@@ -1,0 +1,86 @@
+@import '../variables.module';
+
+.AnimalPage {
+  &__gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    min-width: 100vw;
+    z-index: 1;
+  }
+
+  &__go-back {
+    margin-inline-start: 5vw;
+    --icon-font-size: 40px;
+  }
+
+  &__like-btn {
+    margin-inline-end: 4vw;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    margin: auto;
+    width: fit-content;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 50px;
+    color: $white;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(180.48deg, #f8bd3d -4.61%, rgba(248, 189, 61, 0.2) 99.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    mix-blend-mode: hard-light;
+    line-height: 80px;
+  }
+
+  &__slide-title {
+    justify-content: flex-end;
+    padding-bottom: 40px !important;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  &__content {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: $dark;
+    animation: slide-in 0.4s;
+
+    &--close {
+      animation: slide-out 0.4s;
+    }
+  }
+}

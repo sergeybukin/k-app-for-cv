@@ -1,0 +1,11 @@
+@import '../../variables.module';
+
+.WeatherSummary {
+  &__icon {
+    height: 40px;
+  }
+
+  .block.row {
+    justify-content: space-between;
+  }
+}

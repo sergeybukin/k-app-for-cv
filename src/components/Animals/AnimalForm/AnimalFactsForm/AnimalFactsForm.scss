@@ -1,0 +1,23 @@
+@import '../../../../variables.module';
+
+.AnimalFactsForm {
+  padding-top: 10px;
+  width: 94vw;
+  margin: 0 auto;
+
+  &__fact {
+    margin: 20px auto;
+    padding-inline-start: 15px;
+    border-radius: 12px;
+    background-color: $s-dark;
+    position: relative;
+  }
+
+  &__remove-fact {
+    z-index: 2000;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    top: -11px;
+  }
+}

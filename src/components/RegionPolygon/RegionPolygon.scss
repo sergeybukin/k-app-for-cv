@@ -1,0 +1,13 @@
+@import "../../variables.module";
+.RegionPolygon {
+  svg {
+    height: 100% !important;
+    width: 100% !important;
+    max-height: inherit;
+    max-width: inherit;
+  }
+  path {
+    color: $primary !important;
+    fill: currentColor !important;
+  }
+}

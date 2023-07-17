@@ -1,0 +1,88 @@
+@import '../../../variables.module';
+
+.ImageUploaderConnected {
+  width: 94vw;
+  height: fit-content;
+  display: flex;
+  gap: 14px;
+
+  &.right {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &.left {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  .adm-image-uploader {
+    --cell-size: 150px;
+    width: $image-uploader-cell-size;
+    height: $image-uploader-cell-size;
+  }
+
+  .adm-space-item {
+    margin-right: 0;
+  }
+
+  .adm-image-uploader-cell {
+    background-color: $s-dark;
+  }
+
+  &__backdrop {
+    position: absolute;
+    width: $image-uploader-cell-size;
+    height: $image-uploader-cell-size;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: $secondary-green;
+    opacity: 0.5;
+  }
+
+  &__loader {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 25px;
+    z-index: 3;
+  }
+
+  &__progress {
+    width: 150px;
+    position: absolute;
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    z-index: 3;
+  }
+
+  &.right {
+    .adm-space.adm-space-block {
+      justify-content: flex-end !important;
+    }
+
+    .ImageUploaderConnected {
+      &__backdrop {
+        left: unset;
+        right: 0;
+      }
+
+      &__loader {
+        left: unset;
+        right: 25px;
+      }
+
+      &__progress {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+}

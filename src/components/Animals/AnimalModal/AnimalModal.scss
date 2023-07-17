@@ -1,0 +1,14 @@
+@import 'src/variables.module';
+
+.AnimalModal {
+  .adm-popup-body {
+    background-color: $x-dark;
+    height: 100vh;
+    padding-top: env(safe-area-inset-top);
+  }
+
+  ion-toolbar {
+    --background: $x-dark;
+    padding: 0 2vw 10px 2vw;
+  }
+}

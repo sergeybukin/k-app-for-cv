@@ -1,0 +1,87 @@
+@import '../../../variables.module';
+
+.AnimalForm {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  overflow-y: scroll;
+  gap: 14px;
+  padding-bottom: 60px;
+
+  .ant-select-selection-placeholder {
+    inset-inline-start: 0;
+  }
+
+  &__block {
+    width: 94vw;
+    margin: 0 auto;
+    padding-inline-start: 15px;
+    border-radius: 12px;
+    background-color: $s-dark;
+  }
+
+  &__label {
+    width: 94vw;
+    margin: 16px auto 0 auto;
+  }
+
+  &__media {
+    width: 94vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__status-select {
+    padding: 8px 0;
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  .ant-form-item-label {
+    padding: 0;
+
+    label {
+      color: $white;
+      font-size: 18px;
+      font-weight: 400;
+      height: 100%;
+    }
+  }
+
+  &__inputs-divider {
+    margin: 0;
+    border-color: $hard-gray;
+  }
+
+  &__units-select {
+    width: 20px;
+  }
+
+  &__input {
+    padding: 0;
+    height: 50px;
+    margin: 0;
+
+    input,
+    textarea {
+      color: $white;
+      font-weight: 400;
+      font-size: 18px;
+      height: 100%;
+
+      &::placeholder {
+        color: $easy-gray;
+      }
+    }
+
+    &--textarea {
+      padding-top: 10px;
+      height: 120px;
+      padding-bottom: 8px;
+    }
+  }
+}

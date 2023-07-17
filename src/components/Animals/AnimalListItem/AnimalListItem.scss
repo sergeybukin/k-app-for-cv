@@ -1,0 +1,40 @@
+@import '../../../variables.module';
+
+.AnimalListItem {
+  background-color: transparent;
+  line-height: unset;
+  padding: 8px 12px;
+  --active-background-color: none;
+  --border-bottom: none;
+  --border-top: none;
+  --border-inner: none;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__swiper {
+    background-color: transparent;
+  }
+
+  &__like-btn {
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    top: 14%;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  .button-native {
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,18 @@
+ion-modal {
+  padding-top: 100px;
+  .modal-content {
+    --width: fit-content;
+    --height: fit-content;
+    padding: 5%;
+  }
+
+  ion-button {
+    font-family: var(--font-family);
+  }
+}
+.backdrop-no-scroll {
+  background: transparent !important;
+}
+ion-modal::part(content) {
+  pointer-events: visible !important;
+}

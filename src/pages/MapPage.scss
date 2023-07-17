@@ -1,0 +1,23 @@
+@import '../variables.module';
+
+.MapPage {
+  .toolbar {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: 10px;
+    height: fit-content;
+    background-color: $dark;
+  }
+
+  ion-toolbar {
+    --background: transparent !important;
+  }
+
+  &__toolbar {
+    background-color: transparent !important;
+  }
+
+  .mapboxgl-ctrl-bottom-right,
+  .mapboxgl-ctrl-bottom-left {
+    bottom: 11vh;
+  }
+}

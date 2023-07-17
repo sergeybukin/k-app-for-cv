@@ -1,0 +1,12 @@
+@import '../variables.module';
+
+.AnimalsPage {
+  &__list {
+    margin-top: 16px;
+
+    .adm-list-body {
+      background-color: unset;
+      border: none;
+    }
+  }
+}

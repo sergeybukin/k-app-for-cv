@@ -1,0 +1,22 @@
+@import '../../variables.module';
+
+.DiscoverAnimals {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+
+  &__img {
+    width: 42vw;
+    height: 108px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .text {
+    width: 55%;
+    z-index: 1;
+  }
+}

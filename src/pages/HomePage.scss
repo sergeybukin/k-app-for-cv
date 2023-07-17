@@ -1,0 +1,17 @@
+@import '../variables.module';
+
+.HomePage {
+  &__content {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .BuyTicketBtn {
+    &__icon {
+      padding-inline-end: 10px;
+      font-size: 30px;
+    }
+  }
+}

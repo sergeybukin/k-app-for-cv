@@ -1,0 +1,183 @@
+@import 'variables.module';
+/* Core CSS required for Ionic components to work properly */
+@import '@ionic/react/css/core.css';
+/* Basic CSS for apps built with Ionic */
+@import '@ionic/react/css/normalize.css';
+@import '@ionic/react/css/structure.css';
+@import '@ionic/react/css/typography.css';
+@import '@ionic/react/css/padding.css';
+@import '@ionic/react/css/float-elements.css';
+@import '@ionic/react/css/text-alignment.css';
+@import '@ionic/react/css/text-transformation.css';
+@import '@ionic/react/css/flex-utils.css';
+@import '@ionic/react/css/display.css';
+
+:root {
+  --primary-color: $primary-green;
+  --secondary-color: $secondary-green;
+  --icon-color-secondary: $secondary-green;
+  background-color: $dark;
+}
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  font-size: 18px;
+  background: transparent;
+}
+
+#root {
+  background: transparent;
+}
+
+ion-searchbar ion-icon {
+  color: $dark !important;
+}
+
+ion-button {
+  height: unset;
+}
+
+ion-loading,
+ion-text,
+ion-content,
+ion-searchbar,
+ion-list,
+ion-item,
+ion-toast,
+ion-header,
+ion-toolbar {
+  --background: #292929;
+  color: $white;
+  --color: $white;
+  font-family: $main-font !important;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+ion-loading,
+ion-text,
+ion-content,
+ion-searchbar,
+ion-list,
+ion-item,
+ion-toast,
+ion-header,
+ion-toolbar,
+ion-buttons,
+ion-button {
+  &.color {
+    &.primary {
+      color: $primary !important;
+      --color: $primary !important;
+    }
+  }
+}
+
+.title {
+  color: $white;
+  font-family: $main-font !important;
+  font-weight: bold;
+
+  &.primary {
+    color: $primary;
+  }
+
+  &.easy-gray {
+    color: $easy-gray;
+  }
+
+  &.extra-small {
+    font-size: 20px;
+  }
+  &.small {
+    font-size: 22px;
+  }
+  &.medium {
+    font-size: 28px;
+  }
+  &.large {
+    font-size: 36px;
+  }
+
+  &.align-right {
+    text-align: right;
+  }
+
+  &.regular {
+    font-weight: 400;
+  }
+}
+
+.text {
+  font-size: 18px;
+  color: $white;
+  font-family: $main-font;
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.primary {
+    color: $primary;
+  }
+
+  &.easy-gray {
+    color: $easy-gray;
+  }
+
+  &.black {
+    color: $dark;
+  }
+
+  &.medium {
+    font-size: 19px;
+  }
+
+  &.small {
+    font-size: 14px;
+  }
+}
+
+.link {
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.block {
+  display: flex;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.small-card {
+  width: 42vw;
+  display: flex;
+  flex-direction: column;
+  background: $hard-gray;
+  border-radius: 14px;
+  padding: 14px;
+  height: 108px;
+  filter: drop-shadow(1px 1px 8px rgba(0, 0, 0, 0.05));
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  }
+  a:hover {
+  }
+  button {
+  }
+}
